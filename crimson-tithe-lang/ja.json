@@ -1,0 +1,63 @@
+{
+  "CT": {
+    "moduleName": "クリムゾン・タイズ",
+    "gmHub": {
+      "title": "クリムゾン・タイズ GMハブ",
+      "selectActorLabel": "アクタを選択",
+      "livePointsLabel": "現在のクリムゾンポイント:",
+      "amountLabel": "追加/削除する量",
+      "addButton": "+ 追加",
+      "subtractButton": "- 削除",
+      "closeButtonTitle": "閉じる",
+      "notifications": {
+        "noActorSelected": "アクタが選択されていません",
+        "invalidAmount": "無効な量",
+        "pointsAdded": "現在のクリムゾンポイントが追加されました: {amount}。新しい合計: {newPoints}",
+        "pointsRemoved": "現在のクリムゾンポイントが削除されました: {amount}。新しい合計: {newPoints}"
+      }
+    },
+    "popUp": {
+      "title": "クリムゾンポイント獲得！",
+      "header": "クリムゾンポイント獲得！",
+      "closeButtonTitle": "閉じる"
+    },
+    "chatCard": {
+      "title": "クリムゾンポイント獲得！",
+      "awardMessage": "<b>{actorName}</b> は <b>{points} {pointsText}</b> を獲得しました。",
+      "eventLabel": "<i>イベント:</i> {eventDescription}",
+      "pointSingular": "ポイント",
+      "pointPlural": "ポイント",
+      "speakerAlias": "クリムゾン・タイズ"
+    },
+    "events": {
+      "critSkill": "技能判定クリティカル！",
+      "critSave": "セーヴィングスロークリティカル！",
+      "fellInBattle": "戦闘で倒れた！",
+      "afflictedFear": "恐怖状態",
+      "manualGM": "ポイントはGMによって手動で調整されました。"
+    },
+    "api": {
+      "gmOnlyWarning": "GMのみがAPI経由でポイントを付与できます。",
+      "invalidInputError": "タイズAPIの無効なアクタIDまたはポイント数。"
+    },
+    "logs": {
+      "init": "クリムゾン・タイズ | モジュールを初期化中",
+      "socketReady": "クリムゾン・タイズ | Socketlib 登録済み。",
+      "setup": "クリムゾン・タイズ | セットアップフェーズ",
+      "ready": "クリムゾン・タイズ | 準備完了フェーズ",
+      "hooksRegistered": "クリムゾン・タイズ | イベントフック登録済み。",
+      "handlingAward": "クリムゾン・タイズ | {eventDescription} によってトリガーされた {actorName} の報酬を処理中",
+      "emittingPopup": "クリムゾン・タイズ | アクタ {actorId} のポップアップリクエストをソケット経由で発行中",
+      "socketNotReady": "クリムゾン・タイズ | Socketlib が準備できていないため、ポップアップリクエストを発行できません。",
+      "popupFallback": "クリムゾン・タイズ | フォールバック用のポップアップUIの読み込みに失敗しました:",
+      "unknownHook": "クリムゾン・タイズ | 設定で不明なフックタイプが指定されました: {hook}",
+      "setLCP": "クリムゾン・タイズ | {actorName} のLCPを {newValue} に設定",
+      "invalidAudio": "クリムゾン・タイズ | オーディオの無効なcpValue: {cpValue}",
+      "playingAudio": "クリムゾン・タイズ | オーディオを再生中: {filePath}",
+      "popupSkipped": "クリムゾン・タイズ | {actorName} のポップアップは既に開いています。スキップします。",
+      "hubLCPChange": "クリムゾン・タイズ GMハブ | {actorName} のLCP変更を検出しました。再描画中。",
+      "registeredHook": "クリムゾン・タイズ GMハブ | アクタ {actorName} の更新フック (ID: {hookId}) を登録しました",
+      "unregisteredHook": "クリムゾン・タイズ GMハブ | 更新フック (ID: {hookId}) の登録を解除しました"
+    }
+  }
+}

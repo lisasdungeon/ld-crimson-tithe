@@ -1,0 +1,63 @@
+{
+  "CT": {
+    "moduleName": "क्रिमसन दशमांश",
+    "gmHub": {
+      "title": "क्रिमसन दशमांश जीएम हब",
+      "selectActorLabel": "एक्टर चुनें",
+      "livePointsLabel": "लाइव क्रिमसन पॉइंट्स:",
+      "amountLabel": "जोड़ने/घटाने की राशि",
+      "addButton": "+ जोड़ें",
+      "subtractButton": "- घटाएं",
+      "closeButtonTitle": "बंद करें",
+      "notifications": {
+        "noActorSelected": "कोई एक्टर नहीं चुना गया",
+        "invalidAmount": "अमान्य राशि",
+        "pointsAdded": "लाइव क्रिमसन पॉइंट्स जोड़े गए: {amount}। नया कुल: {newPoints}",
+        "pointsRemoved": "लाइव क्रिमसन पॉइंट्स घटाए गए: {amount}। नया कुल: {newPoints}"
+      }
+    },
+    "popUp": {
+      "title": "क्रिमसन पॉइंट प्रदान किया गया!",
+      "header": "क्रिमसन पॉइंट प्रदान किया गया!",
+      "closeButtonTitle": "बंद करें"
+    },
+    "chatCard": {
+      "title": "क्रिमसन पॉइंट प्रदान किया गया!",
+      "awardMessage": "<b>{actorName}</b> को <b>{points} {pointsText}</b> प्रदान किए गए हैं।",
+      "eventLabel": "<i>घटना:</i> {eventDescription}",
+      "pointSingular": "पॉइंट",
+      "pointPlural": "पॉइंट्स",
+      "speakerAlias": "क्रिमसन दशमांश"
+    },
+    "events": {
+      "critSkill": "महत्वपूर्ण कौशल जांच!",
+      "critSave": "महत्वपूर्ण बचाव थ्रो!",
+      "fellInBattle": "लड़ाई में गिर गया!",
+      "afflictedFear": "डर से पीड़ित",
+      "manualGM": "जीएम द्वारा मैन्युअल रूप से अंक समायोजित किए गए।"
+    },
+    "api": {
+      "gmOnlyWarning": "केवल जीएम ही एपीआई के माध्यम से अंक प्रदान कर सकते हैं।",
+      "invalidInputError": "दशमांश एपीआई के लिए अमान्य एक्टर आईडी या अंकों की राशि।"
+    },
+    "logs": {
+      "init": "क्रिमसन दशमांश | मॉड्यूल प्रारंभ हो रहा है",
+      "socketReady": "क्रिमसन दशमांश | सॉकेटलिब पंजीकृत।",
+      "setup": "क्रिमसन दशमांश | सेटअप चरण",
+      "ready": "क्रिमसन दशमांश | तैयार चरण",
+      "hooksRegistered": "क्रिमसन दशमांश | इवेंट हुक पंजीकृत।",
+      "handlingAward": "क्रिमसन दशमांश | {eventDescription} द्वारा ट्रिगर किए गए {actorName} के लिए पुरस्कार संभाल रहा है",
+      "emittingPopup": "क्रिमसन दशमांश | एक्टर {actorId} के लिए सॉकेट के माध्यम से पॉपअप अनुरोध भेजा जा रहा है",
+      "socketNotReady": "क्रिमसन दशमांश | सॉकेटलिब तैयार नहीं है, पॉपअप अनुरोध नहीं भेज सकता।",
+      "popupFallback": "क्रिमसन दशमांश | फ़ॉलबैक के लिए पॉपअप यूआई लोड करने में विफल:",
+      "unknownHook": "क्रिमसन दशमांश | कॉन्फ़िग में अज्ञात हुक प्रकार निर्दिष्ट: {hook}",
+      "setLCP": "क्रिमसन दशमांश | {actorName} के लिए LCP को {newValue} पर सेट करें",
+      "invalidAudio": "क्रिमसन दशमांश | ऑडियो के लिए अमान्य cpValue: {cpValue}",
+      "playingAudio": "क्रिमसन दशमांश | ऑडियो चलाया जा रहा है: {filePath}",
+      "popupSkipped": "क्रिमसन दशमांश | {actorName} के लिए पॉपअप पहले से खुला है। छोड़ रहा है।",
+      "hubLCPChange": "क्रिमसन दशमांश जीएम हब | {actorName} के लिए LCP परिवर्तन का पता चला। पुनः प्रस्तुत किया जा रहा है।",
+      "registeredHook": "क्रिमसन दशमांश जीएम हब | एक्टर {actorName} के लिए अपडेट हुक (आईडी: {hookId}) पंजीकृत",
+      "unregisteredHook": "क्रिमसन दशमांश जीएम हब | अपडेट हुक (आईडी: {hookId}) अपंजीकृत"
+    }
+  }
+}

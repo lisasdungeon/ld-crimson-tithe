@@ -1,0 +1,63 @@
+{
+  "CT": {
+    "moduleName": "Scharlachroter Zehnt",
+    "gmHub": {
+      "title": "Scharlachroter Zehnt GM Hub",
+      "selectActorLabel": "Akteur auswählen",
+      "livePointsLabel": "Aktive Scharlachrote Punkte:",
+      "amountLabel": "Betrag zum Hinzufügen/Abziehen",
+      "addButton": "+ HINZUFÜGEN",
+      "subtractButton": "- ABZIEHEN",
+      "closeButtonTitle": "Schließen",
+      "notifications": {
+        "noActorSelected": "Kein Akteur ausgewählt",
+        "invalidAmount": "Ungültiger Betrag",
+        "pointsAdded": "Aktive Scharlachrote Punkte hinzugefügt: {amount}. Neuer Gesamtstand: {newPoints}",
+        "pointsRemoved": "Aktive Scharlachrote Punkte abgezogen: {amount}. Neuer Gesamtstand: {newPoints}"
+      }
+    },
+    "popUp": {
+      "title": "Scharlachroter Punkt Verliehen!",
+      "header": "Scharlachroter Punkt Verliehen!",
+      "closeButtonTitle": "Schließen"
+    },
+    "chatCard": {
+      "title": "Scharlachroter Punkt Verliehen!",
+      "awardMessage": "<b>{actorName}</b> wurden <b>{points} {pointsText}</b> verliehen.",
+      "eventLabel": "<i>Ereignis:</i> {eventDescription}",
+      "pointSingular": "Punkt",
+      "pointPlural": "Punkte",
+      "speakerAlias": "Scharlachroter Zehnt"
+    },
+    "events": {
+      "critSkill": "Kritischer Fertigkeitswurf!",
+      "critSave": "Kritischer Rettungswurf!",
+      "fellInBattle": "Im Kampf gefallen!",
+      "afflictedFear": "Von Furcht betroffen",
+      "manualGM": "Punkte manuell vom GM angepasst."
+    },
+    "api": {
+      "gmOnlyWarning": "Nur GMs können Punkte über API vergeben.",
+      "invalidInputError": "Ungültige Akteur-ID oder Punktzahl für Zehnt-API."
+    },
+    "logs": {
+      "init": "Scharlachroter Zehnt | Modul wird initialisiert",
+      "socketReady": "Scharlachroter Zehnt | Socketlib registriert.",
+      "setup": "Scharlachroter Zehnt | Setup-Phase",
+      "ready": "Scharlachroter Zehnt | Bereit-Phase",
+      "hooksRegistered": "Scharlachroter Zehnt | Ereignis-Hooks registriert.",
+      "handlingAward": "Scharlachroter Zehnt | Bearbeite Auszeichnung für {actorName}, ausgelöst durch {eventDescription}",
+      "emittingPopup": "SCHARLACHROTER ZEHNT | Sende Popup-Anfrage über Socket für Akteur {actorId}",
+      "socketNotReady": "SCHARLACHROTER ZEHNT | Socketlib nicht bereit, kann Popup-Anfrage nicht senden.",
+      "popupFallback": "Scharlachroter Zehnt | Popup-UI für Fallback konnte nicht geladen werden:",
+      "unknownHook": "Scharlachroter Zehnt | Unbekannter Hook-Typ in Konfiguration angegeben: {hook}",
+      "setLCP": "Scharlachroter Zehnt | ASP für {actorName} auf {newValue} gesetzt",
+      "invalidAudio": "Scharlachroter Zehnt | Ungültiger cpValue für Audio: {cpValue}",
+      "playingAudio": "Scharlachroter Zehnt | Spiele Audio ab: {filePath}",
+      "popupSkipped": "Scharlachroter Zehnt | Popup für {actorName} bereits geöffnet. Überspringe.",
+      "hubLCPChange": "Scharlachroter Zehnt GM Hub | ASP-Änderung für {actorName} erkannt. Neu rendern.",
+      "registeredHook": "Scharlachroter Zehnt GM Hub | Update-Hook (ID: {hookId}) für Akteur {actorName} registriert",
+      "unregisteredHook": "Scharlachroter Zehnt GM Hub | Update-Hook (ID: {hookId}) deregistriert"
+    }
+  }
+}

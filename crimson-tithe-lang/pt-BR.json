@@ -1,0 +1,63 @@
+{
+  "CT": {
+    "moduleName": "Dízimo Carmesim",
+    "gmHub": {
+      "title": "Hub do Mestre - Dízimo Carmesim",
+      "selectActorLabel": "Selecionar Ator",
+      "livePointsLabel": "Pontos Carmesins Ativos:",
+      "amountLabel": "Quantidade para Adicionar/Subtrair",
+      "addButton": "+ ADICIONAR",
+      "subtractButton": "- SUBTRAIR",
+      "closeButtonTitle": "Fechar",
+      "notifications": {
+        "noActorSelected": "Nenhum ator selecionado",
+        "invalidAmount": "Quantidade inválida",
+        "pointsAdded": "Pontos Carmesins Ativos adicionados: {amount}. Novo total: {newPoints}",
+        "pointsRemoved": "Pontos Carmesins Ativos subtraídos: {amount}. Novo total: {newPoints}"
+      }
+    },
+    "popUp": {
+      "title": "Ponto Carmesim Concedido!",
+      "header": "Ponto Carmesim Concedido!",
+      "closeButtonTitle": "Fechar"
+    },
+    "chatCard": {
+      "title": "Ponto Carmesim Concedido!",
+      "awardMessage": "<b>{actorName}</b> recebeu <b>{points} {pointsText}</b>.",
+      "eventLabel": "<i>Evento:</i> {eventDescription}",
+      "pointSingular": "ponto",
+      "pointPlural": "pontos",
+      "speakerAlias": "Dízimo Carmesim"
+    },
+    "events": {
+      "critSkill": "Teste de Perícia Crítico!",
+      "critSave": "Teste de Resistência Crítico!",
+      "fellInBattle": "Caiu em Batalha!",
+      "afflictedFear": "Afligido por Medo",
+      "manualGM": "Pontos ajustados manualmente pelo Mestre."
+    },
+    "api": {
+      "gmOnlyWarning": "Apenas Mestres podem conceder pontos via API.",
+      "invalidInputError": "ID de ator ou quantidade de pontos inválida para a API do Dízimo."
+    },
+    "logs": {
+      "init": "Dízimo Carmesim | Inicializando módulo",
+      "socketReady": "Dízimo Carmesim | Socketlib registrado.",
+      "setup": "Dízimo Carmesim | Fase de setup",
+      "ready": "Dízimo Carmesim | Fase pronta",
+      "hooksRegistered": "Dízimo Carmesim | Ganchos de evento registrados.",
+      "handlingAward": "Dízimo Carmesim | Processando premiação para {actorName} acionada por {eventDescription}",
+      "emittingPopup": "DÍZIMO CARMESIM | Emitindo requisição de pop-up via socket para o ator {actorId}",
+      "socketNotReady": "DÍZIMO CARMESIM | Socketlib não está pronto, não é possível emitir requisição de pop-up.",
+      "popupFallback": "Dízimo Carmesim | Falha ao carregar UI de pop-up para fallback:",
+      "unknownHook": "Dízimo Carmesim | Tipo de gancho desconhecido especificado na config: {hook}",
+      "setLCP": "Dízimo Carmesim | PCA definido para {actorName} como {newValue}",
+      "invalidAudio": "Dízimo Carmesim | cpValue inválido para áudio: {cpValue}",
+      "playingAudio": "Dízimo Carmesim | Tocando áudio: {filePath}",
+      "popupSkipped": "Dízimo Carmesim | Pop-up já aberto para {actorName}. Ignorando.",
+      "hubLCPChange": "Hub Mestre Dízimo Carmesim | Mudança de PCA detectada para {actorName}. Re-renderizando.",
+      "registeredHook": "Hub Mestre Dízimo Carmesim | Gancho de atualização registrado (ID: {hookId}) para o ator {actorName}",
+      "unregisteredHook": "Hub Mestre Dízimo Carmesim | Gancho de atualização desregistrado (ID: {hookId})"
+    }
+  }
+}

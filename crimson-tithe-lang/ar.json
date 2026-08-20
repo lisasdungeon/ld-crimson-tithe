@@ -1,0 +1,63 @@
+{
+  "CT": {
+    "moduleName": "العشر القرمزي",
+    "gmHub": {
+      "title": "مركز مدير اللعبة - العشر القرمزي",
+      "selectActorLabel": "اختر الشخصية",
+      "livePointsLabel": "النقاط القرمزية الحية:",
+      "amountLabel": "الكمية للإضافة/الطرح",
+      "addButton": "+ إضافة",
+      "subtractButton": "- طرح",
+      "closeButtonTitle": "إغلاق",
+      "notifications": {
+        "noActorSelected": "لم يتم اختيار شخصية",
+        "invalidAmount": "كمية غير صالحة",
+        "pointsAdded": "تمت إضافة النقاط القرمزية الحية: {amount}. المجموع الجديد: {newPoints}",
+        "pointsRemoved": "تم طرح النقاط القرمزية الحية: {amount}. المجموع الجديد: {newPoints}"
+      }
+    },
+    "popUp": {
+      "title": "تم منح نقطة قرمزية!",
+      "header": "تم منح نقطة قرمزية!",
+      "closeButtonTitle": "إغلاق"
+    },
+    "chatCard": {
+      "title": "تم منح نقطة قرمزية!",
+      "awardMessage": "تم منح <b>{actorName}</b> <b>{points} {pointsText}</b>.",
+      "eventLabel": "<i>الحدث:</i> {eventDescription}",
+      "pointSingular": "نقطة",
+      "pointPlural": "نقاط",
+      "speakerAlias": "العشر القرمزي"
+    },
+    "events": {
+      "critSkill": "فحص مهارة حاسم!",
+      "critSave": "رمية إنقاذ حاسمة!",
+      "fellInBattle": "سقط في المعركة!",
+      "afflictedFear": "متأثر بالخوف",
+      "manualGM": "تم تعديل النقاط يدويًا بواسطة مدير اللعبة."
+    },
+    "api": {
+      "gmOnlyWarning": "فقط مديرو اللعبة يمكنهم منح النقاط عبر API.",
+      "invalidInputError": "معرف شخصية أو كمية نقاط غير صالحة لواجهة برمجة تطبيقات العشر."
+    },
+    "logs": {
+      "init": "العشر القرمزي | تهيئة الوحدة",
+      "socketReady": "العشر القرمزي | تم تسجيل Socketlib.",
+      "setup": "العشر القرمزي | مرحلة الإعداد",
+      "ready": "العشر القرمزي | مرحلة الاستعداد",
+      "hooksRegistered": "العشر القرمزي | تم تسجيل خطافات الأحداث.",
+      "handlingAward": "العشر القرمزي | معالجة الجائزة لـ {actorName} التي أثارها {eventDescription}",
+      "emittingPopup": "العشر القرمزي | إصدار طلب نافذة منبثقة عبر المقبس للشخصية {actorId}",
+      "socketNotReady": "العشر القرمزي | Socketlib غير جاهز، لا يمكن إصدار طلب نافذة منبثقة.",
+      "popupFallback": "العشر القرمزي | فشل تحميل واجهة المستخدم المنبثقة للبديل:",
+      "unknownHook": "العشر القرمزي | نوع خطاف غير معروف محدد في التكوين: {hook}",
+      "setLCP": "العشر القرمزي | تم تعيين LCP لـ {actorName} إلى {newValue}",
+      "invalidAudio": "العشر القرمزي | قيمة cpValue غير صالحة للصوت: {cpValue}",
+      "playingAudio": "العشر القرمزي | تشغيل الصوت: {filePath}",
+      "popupSkipped": "العشر القرمزي | النافذة المنبثقة لـ {actorName} مفتوحة بالفعل. التخطي.",
+      "hubLCPChange": "مركز مدير اللعبة العشر القرمزي | تم اكتشاف تغيير LCP لـ {actorName}. إعادة العرض.",
+      "registeredHook": "مركز مدير اللعبة العشر القرمزي | تم تسجيل خطاف التحديث (المعرف: {hookId}) للشخصية {actorName}",
+      "unregisteredHook": "مركز مدير اللعبة العشر القرمزي | تم إلغاء تسجيل خطاف التحديث (المعرف: {hookId})"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "CT": {
+    "moduleName": "猩红什一税",
+    "gmHub": {
+      "title": "猩红什一税 GM 中心",
+      "selectActorLabel": "选择角色",
+      "livePointsLabel": "当前猩红点数:",
+      "amountLabel": "增加/减少数量",
+      "addButton": "+ 增加",
+      "subtractButton": "- 减少",
+      "closeButtonTitle": "关闭",
+      "notifications": {
+        "noActorSelected": "未选择角色",
+        "invalidAmount": "无效数量",
+        "pointsAdded": "当前猩红点数已增加: {amount}。 新总数: {newPoints}",
+        "pointsRemoved": "当前猩红点数已减少: {amount}。 新总数: {newPoints}"
+      }
+    },
+    "popUp": {
+      "title": "获得猩红点数！",
+      "header": "获得猩红点数！",
+      "closeButtonTitle": "关闭"
+    },
+    "chatCard": {
+      "title": "获得猩红点数！",
+      "awardMessage": "<b>{actorName}</b> 已获得 <b>{points} {pointsText}</b>。",
+      "eventLabel": "<i>事件:</i> {eventDescription}",
+      "pointSingular": "点",
+      "pointPlural": "点",
+      "speakerAlias": "猩红什一税"
+    },
+    "events": {
+      "critSkill": "技能检定大成功！",
+      "critSave": "豁免检定大成功！",
+      "fellInBattle": "战斗倒下！",
+      "afflictedFear": "受到恐惧影响",
+      "manualGM": "点数由 GM 手动调整。"
+    },
+    "api": {
+      "gmOnlyWarning": "只有 GM 可以通过 API 授予点数。",
+      "invalidInputError": "无效的角色 ID 或点数数量 (什一税 API)。"
+    },
+    "logs": {
+      "init": "猩红什一税 | 初始化模组",
+      "socketReady": "猩红什一税 | Socketlib 已注册。",
+      "setup": "猩红什一税 | 设置阶段",
+      "ready": "猩红什一税 | 就绪阶段",
+      "hooksRegistered": "猩红什一税 | 事件钩子已注册。",
+      "handlingAward": "猩红什一税 | 处理由 {eventDescription} 触发的 {actorName} 奖励",
+      "emittingPopup": "猩红什一税 | 通过 socket 向角色 {actorId} 发送弹出请求",
+      "socketNotReady": "猩红什一税 | Socketlib 未就绪，无法发送弹出请求。",
+      "popupFallback": "猩红什一税 | 加载后备弹出 UI 失败:",
+      "unknownHook": "猩红什一税 | 配置中指定了未知的钩子类型: {hook}",
+      "setLCP": "猩红什一税 | 设置 {actorName} 的 LCP 为 {newValue}",
+      "invalidAudio": "猩红什一税 | 无效的音频 cpValue: {cpValue}",
+      "playingAudio": "猩红什一税 | 播放音频: {filePath}",
+      "popupSkipped": "猩红什一税 | {actorName} 的弹出窗口已打开。跳过。",
+      "hubLCPChange": "猩红什一税 GM 中心 | 检测到 {actorName} 的 LCP 变化。重新渲染中。",
+      "registeredHook": "猩红什一税 GM 中心 | 为角色 {actorName} 注册了更新钩子 (ID: {hookId})",
+      "unregisteredHook": "猩红什一税 GM 中心 | 注销了更新钩子 (ID: {hookId})"
+    }
+  }
+}

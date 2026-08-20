@@ -1,0 +1,63 @@
+{
+  "CT": {
+    "moduleName": "Dîme Cramoisie",
+    "gmHub": {
+      "title": "Hub MJ de la Dîme Cramoisie",
+      "selectActorLabel": "Sélectionner l'Acteur",
+      "livePointsLabel": "Points Cramoisis Actifs :",
+      "amountLabel": "Montant à Ajouter/Retirer",
+      "addButton": "+ AJOUTER",
+      "subtractButton": "- RETIRER",
+      "closeButtonTitle": "Fermer",
+      "notifications": {
+        "noActorSelected": "Aucun acteur sélectionné",
+        "invalidAmount": "Montant invalide",
+        "pointsAdded": "Points Cramoisis Actifs ajoutés : {amount}. Nouveau total : {newPoints}",
+        "pointsRemoved": "Points Cramoisis Actifs retirés : {amount}. Nouveau total : {newPoints}"
+      }
+    },
+    "popUp": {
+      "title": "Point Cramoisi Attribué !",
+      "header": "Point Cramoisi Attribué !",
+      "closeButtonTitle": "Fermer"
+    },
+    "chatCard": {
+      "title": "Point Cramoisi Attribué !",
+      "awardMessage": "<b>{actorName}</b> a reçu <b>{points} {pointsText}</b>.",
+      "eventLabel": "<i>Événement :</i> {eventDescription}",
+      "pointSingular": "point",
+      "pointPlural": "points",
+      "speakerAlias": "Dîme Cramoisie"
+    },
+    "events": {
+      "critSkill": "Test de Compétence Critique !",
+      "critSave": "Jet de Sauvegarde Critique !",
+      "fellInBattle": "Tombé au Combat !",
+      "afflictedFear": "Affligé par la Peur",
+      "manualGM": "Points ajustés manuellement par le MJ."
+    },
+    "api": {
+      "gmOnlyWarning": "Seuls les MJ peuvent attribuer des points via l'API.",
+      "invalidInputError": "ID d'acteur ou montant de points invalide pour l'API Dîme."
+    },
+    "logs": {
+      "init": "Dîme Cramoisie | Initialisation du module",
+      "socketReady": "Dîme Cramoisie | Socketlib enregistré.",
+      "setup": "Dîme Cramoisie | Phase de configuration",
+      "ready": "Dîme Cramoisie | Phase prête",
+      "hooksRegistered": "Dîme Cramoisie | Hooks d'événement enregistrés.",
+      "handlingAward": "Dîme Cramoisie | Traitement de la récompense pour {actorName} déclenchée par {eventDescription}",
+      "emittingPopup": "DÎME CRAMOISIE | Émission de la requête popup via socket pour l'acteur {actorId}",
+      "socketNotReady": "DÎME CRAMOISIE | Socketlib non prêt, impossible d'émettre la requête popup.",
+      "popupFallback": "Dîme Cramoisie | Échec du chargement de l'UI popup pour le fallback :",
+      "unknownHook": "Dîme Cramoisie | Type de hook inconnu spécifié dans la config : {hook}",
+      "setLCP": "Dîme Cramoisie | PCA défini pour {actorName} à {newValue}",
+      "invalidAudio": "Dîme Cramoisie | cpValue invalide pour l'audio : {cpValue}",
+      "playingAudio": "Dîme Cramoisie | Lecture audio : {filePath}",
+      "popupSkipped": "Dîme Cramoisie | Popup déjà ouvert pour {actorName}. Ignoré.",
+      "hubLCPChange": "Hub MJ Dîme Cramoisie | Changement de PCA détecté pour {actorName}. Re-rendu.",
+      "registeredHook": "Hub MJ Dîme Cramoisie | Hook de mise à jour enregistré (ID : {hookId}) pour l'acteur {actorName}",
+      "unregisteredHook": "Hub MJ Dîme Cramoisie | Hook de mise à jour désenregistré (ID : {hookId})"
+    }
+  }
+}

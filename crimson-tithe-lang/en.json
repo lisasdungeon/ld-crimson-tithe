@@ -1,0 +1,90 @@
+{
+  "CT": {
+    "moduleName": "Crimson Tithe",
+
+    "gmHub": {
+      "title": "Crimson Tithe GM Hub",
+      "selectActorLabel": "Select Actor",
+      "livePointsLabel": "Live Crimson Points:",
+      "amountLabel": "Amount to Add/Subtract",
+      "addButton": "+ ADD",
+      "subtractButton": "- SUBTRACT",
+      "closeButtonTitle": "Close",
+      "notifications": {
+        "noActorSelected": "No actor selected",
+        "invalidAmount": "Invalid amount",
+        "pointsAdded": "Live Crimson Points added: {amount}. New total: {newPoints}",
+        "pointsRemoved": "Live Crimson Points removed: {amount}. New total: {newPoints}"
+      }
+    },
+
+    "playerHub": {
+      "title": "Crimson Tithe",
+      "cpLabel": "Crimson Points",
+      "hint": "Points are awarded automatically for deeds in the field. Speak with your GM to tithe or bank."
+    },
+
+    "sceneControls": {
+      "gmTitle": "Crimson Tithe GM",
+      "playerTitle": "Crimson Tithe"
+    },
+
+    "warnings": {
+      "noCharacterAssigned": "No character assigned."
+    },
+
+    "common": {
+      "closeButtonTitle": "Close"
+    },
+
+    "popUp": {
+      "title": "Crimson Point Awarded!",
+      "header": "Crimson Point Awarded!",
+      "closeButtonTitle": "Close"
+    },
+
+    "chatCard": {
+      "title": "Crimson Point Awarded!",
+      "awardMessage": "<b>{actorName}</b> has been awarded <b>{points} {pointsText}</b>.",
+      "eventLabel": "<i>Event:</i> {eventDescription}",
+      "pointSingular": "point",
+      "pointPlural": "points",
+      "speakerAlias": "Crimson Tithe"
+    },
+
+    "events": {
+      "critSkill": "Critical Skill Check!",
+      "critSave": "Critical Saving Throw!",
+      "fellInBattle": "Fell in Battle!",
+      "afflictedFear": "Afflicted by Fear",
+      "manualGM": "Points manually adjusted by GM."
+    },
+
+    "api": {
+      "gmOnlyWarning": "Only GMs can award points via API.",
+      "invalidInputError": "Invalid actor ID or points amount for Tithe API."
+    },
+
+    "logs": {
+      "init": "Crimson Tithe | Initializing module",
+      "socketReady": "Crimson Tithe | Socketlib registered.",
+      "setup": "Crimson Tithe | Setup phase",
+      "ready": "Crimson Tithe | Ready phase",
+      "hooksRegistered": "Crimson Tithe | Event hooks registered.",
+      "handlingAward": "Crimson Tithe | Handling award for {actorName} triggered by {eventDescription}",
+      "emittingPopup": "CRIMSON TITHE | Emitting popup request via socket for actor {actorId}",
+      "socketNotReady": "CRIMSON TITHE | Socketlib not ready, cannot emit popup request.",
+      "popupFallback": "Crimson Tithe | Failed to load popup UI for fallback:",
+      "unknownHook": "Crimson Tithe | Unknown hook type specified in config: {hook}",
+      "setLCP": "Crimson Tithe | Set LCP for {actorName} to {newValue}",
+      "invalidAudio": "Crimson Tithe | Invalid cpValue for audio: {cpValue}",
+      "playingAudio": "Crimson Tithe | Playing audio: {filePath}",
+      "audioPlayFailed": "Crimson Tithe | Failed to play audio: {filePath}",
+      "popupSkipped": "Crimson Tithe | Popup already open for {actorName}. Skipping.",
+      "hubLCPChange": "Crimson Tithe GM Hub | Detected LCP change for {actorName}. Re-rendering.",
+      "registeredHook": "Crimson Tithe GM Hub | Registered update hook (ID: {hookId}) for actor {actorName}",
+      "unregisteredHook": "Crimson Tithe GM Hub | Unregistered update hook (ID: {hookId})",
+      "chatCreateFailed": "Crimson Tithe | Failed to create chat message:"
+    }
+  }
+}

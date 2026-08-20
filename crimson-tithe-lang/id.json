@@ -1,0 +1,63 @@
+{
+  "CT": {
+    "moduleName": "Persepuluhan Merah Tua",
+    "gmHub": {
+      "title": "Hub GM Persepuluhan Merah Tua",
+      "selectActorLabel": "Pilih Aktor",
+      "livePointsLabel": "Poin Merah Tua Aktif:",
+      "amountLabel": "Jumlah untuk Ditambah/Dikurangi",
+      "addButton": "+ TAMBAH",
+      "subtractButton": "- KURANGI",
+      "closeButtonTitle": "Tutup",
+      "notifications": {
+        "noActorSelected": "Tidak ada aktor yang dipilih",
+        "invalidAmount": "Jumlah tidak valid",
+        "pointsAdded": "Poin Merah Tua Aktif ditambahkan: {amount}. Total baru: {newPoints}",
+        "pointsRemoved": "Poin Merah Tua Aktif dikurangi: {amount}. Total baru: {newPoints}"
+      }
+    },
+    "popUp": {
+      "title": "Poin Merah Tua Diberikan!",
+      "header": "Poin Merah Tua Diberikan!",
+      "closeButtonTitle": "Tutup"
+    },
+    "chatCard": {
+      "title": "Poin Merah Tua Diberikan!",
+      "awardMessage": "<b>{actorName}</b> telah diberikan <b>{points} {pointsText}</b>.",
+      "eventLabel": "<i>Acara:</i> {eventDescription}",
+      "pointSingular": "poin",
+      "pointPlural": "poin",
+      "speakerAlias": "Persepuluhan Merah Tua"
+    },
+    "events": {
+      "critSkill": "Pemeriksaan Keterampilan Kritis!",
+      "critSave": "Lemparan Penyelamatan Kritis!",
+      "fellInBattle": "Jatuh dalam Pertempuran!",
+      "afflictedFear": "Terkena Rasa Takut",
+      "manualGM": "Poin disesuaikan secara manual oleh GM."
+    },
+    "api": {
+      "gmOnlyWarning": "Hanya GM yang dapat memberikan poin melalui API.",
+      "invalidInputError": "ID aktor atau jumlah poin tidak valid untuk API Persepuluhan."
+    },
+    "logs": {
+      "init": "Persepuluhan Merah Tua | Memulai modul",
+      "socketReady": "Persepuluhan Merah Tua | Socketlib terdaftar.",
+      "setup": "Persepuluhan Merah Tua | Fase penyiapan",
+      "ready": "Persepuluhan Merah Tua | Fase siap",
+      "hooksRegistered": "Persepuluhan Merah Tua | Kait acara terdaftar.",
+      "handlingAward": "Persepuluhan Merah Tua | Menangani penghargaan untuk {actorName} yang dipicu oleh {eventDescription}",
+      "emittingPopup": "PERSEPULUHAN MERAH TUA | Mengirim permintaan popup melalui soket untuk aktor {actorId}",
+      "socketNotReady": "PERSEPULUHAN MERAH TUA | Socketlib belum siap, tidak dapat mengirim permintaan popup.",
+      "popupFallback": "Persepuluhan Merah Tua | Gagal memuat UI popup untuk fallback:",
+      "unknownHook": "Persepuluhan Merah Tua | Jenis kait tidak dikenal ditentukan dalam konfigurasi: {hook}",
+      "setLCP": "Persepuluhan Merah Tua | LCP untuk {actorName} diatur ke {newValue}",
+      "invalidAudio": "Persepuluhan Merah Tua | Nilai cpValue tidak valid untuk audio: {cpValue}",
+      "playingAudio": "Persepuluhan Merah Tua | Memutar audio: {filePath}",
+      "popupSkipped": "Persepuluhan Merah Tua | Popup untuk {actorName} sudah terbuka. Melewati.",
+      "hubLCPChange": "Hub GM Persepuluhan Merah Tua | Perubahan LCP terdeteksi untuk {actorName}. Merender ulang.",
+      "registeredHook": "Hub GM Persepuluhan Merah Tua | Kait pembaruan terdaftar (ID: {hookId}) untuk aktor {actorName}",
+      "unregisteredHook": "Hub GM Persepuluhan Merah Tua | Pendaftaran kait pembaruan dibatalkan (ID: {hookId})"
+    }
+  }
+}

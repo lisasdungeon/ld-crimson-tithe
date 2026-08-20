@@ -1,0 +1,25 @@
+<form class="crimson-tithe-gm-hub-form">
+  <header class="crimson-tithe-gm-hub-header">
+    <h1>{{localize "CT.gmHub.title"}}</h1>
+    <button type="button" class="close" title="{{localize "CT.common.closeButtonTitle"}}"><i class="fas fa-times"></i></button>
+  </header>
+
+  <section class="ct-party-grid">
+    {{#each actors}}
+    <div class="ct-actor-card" data-actor-id="{{this.id}}">
+      <div class="ct-actor-name" title="{{this.name}}">{{this.name}}</div>
+      <div class="ct-points-display">{{this.points}}</div>
+      
+      <div class="ct-controls">
+        <div class="ct-input-group">
+          <input type="number" class="ct-amount-input" value="1" min="1">
+        </div>
+        <div class="ct-btn-group">
+          <button type="button" class="ct-btn add" data-action="add"><i class="fas fa-plus"></i></button>
+          <button type="button" class="ct-btn subtract" data-action="subtract"><i class="fas fa-minus"></i></button>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </section>
+</form>

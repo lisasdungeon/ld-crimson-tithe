@@ -1,0 +1,63 @@
+{
+  "CT": {
+    "moduleName": "Diezmo Carmesí",
+    "gmHub": {
+      "title": "Centro GM del Diezmo Carmesí",
+      "selectActorLabel": "Seleccionar Actor",
+      "livePointsLabel": "Puntos Carmesí Vivos:",
+      "amountLabel": "Cantidad a Añadir/Restar",
+      "addButton": "+ AÑADIR",
+      "subtractButton": "- RESTAR",
+      "closeButtonTitle": "Cerrar",
+      "notifications": {
+        "noActorSelected": "Ningún actor seleccionado",
+        "invalidAmount": "Cantidad inválida",
+        "pointsAdded": "Puntos Carmesí Vivos añadidos: {amount}. Nuevo total: {newPoints}",
+        "pointsRemoved": "Puntos Carmesí Vivos restados: {amount}. Nuevo total: {newPoints}"
+      }
+    },
+    "popUp": {
+      "title": "¡Punto Carmesí Otorgado!",
+      "header": "¡Punto Carmesí Otorgado!",
+      "closeButtonTitle": "Cerrar"
+    },
+    "chatCard": {
+      "title": "¡Punto Carmesí Otorgado!",
+      "awardMessage": "A <b>{actorName}</b> se le han otorgado <b>{points} {pointsText}</b>.",
+      "eventLabel": "<i>Evento:</i> {eventDescription}",
+      "pointSingular": "punto",
+      "pointPlural": "puntos",
+      "speakerAlias": "Diezmo Carmesí"
+    },
+    "events": {
+      "critSkill": "¡Control de Habilidad Crítico!",
+      "critSave": "¡Tirada de Salvación Crítica!",
+      "fellInBattle": "¡Cayó en Batalla!",
+      "afflictedFear": "Afligido por Miedo",
+      "manualGM": "Puntos ajustados manualmente por el GM."
+    },
+    "api": {
+      "gmOnlyWarning": "Solo los GMs pueden otorgar puntos vía API.",
+      "invalidInputError": "ID de actor o cantidad de puntos inválida para la API del Diezmo."
+    },
+    "logs": {
+      "init": "Diezmo Carmesí | Inicializando módulo",
+      "socketReady": "Diezmo Carmesí | Socketlib registrado.",
+      "setup": "Diezmo Carmesí | Fase de configuración",
+      "ready": "Diezmo Carmesí | Fase lista",
+      "hooksRegistered": "Diezmo Carmesí | Ganchos de evento registrados.",
+      "handlingAward": "Diezmo Carmesí | Gestionando premio para {actorName} activado por {eventDescription}",
+      "emittingPopup": "DIEZMO CARMESÍ | Emitiendo solicitud de popup vía socket para actor {actorId}",
+      "socketNotReady": "DIEZMO CARMESÍ | Socketlib no listo, no se puede emitir solicitud de popup.",
+      "popupFallback": "Diezmo Carmesí | Falló la carga de la UI del popup para fallback:",
+      "unknownHook": "Diezmo Carmesí | Tipo de gancho desconocido especificado en config: {hook}",
+      "setLCP": "Diezmo Carmesí | Establecido LCP para {actorName} a {newValue}",
+      "invalidAudio": "Diezmo Carmesí | cpValue inválido para audio: {cpValue}",
+      "playingAudio": "Diezmo Carmesí | Reproduciendo audio: {filePath}",
+      "popupSkipped": "Diezmo Carmesí | Popup ya abierto para {actorName}. Saltando.",
+      "hubLCPChange": "Centro GM Diezmo Carmesí | Detectado cambio de LCP para {actorName}. Re-renderizando.",
+      "registeredHook": "Centro GM Diezmo Carmesí | Gancho de actualización registrado (ID: {hookId}) para actor {actorName}",
+      "unregisteredHook": "Centro GM Diezmo Carmesí | Gancho de actualización desregistrado (ID: {hookId})"
+    }
+  }
+}
