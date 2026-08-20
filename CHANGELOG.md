@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [1.0.5] - 2026-08-20
+
+- README no longer lists retired `rnk-crimson-blood` as a live flag scope.
+
+
 ## [1.0.4] - 2026-08-20
 
 - Read leftover `rnk-crimson-blood` flags from `actor.flags` instead of calling Foundry `getFlag` on an inactive module.

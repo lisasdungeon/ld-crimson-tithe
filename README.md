@@ -24,7 +24,7 @@ Crimson Tithe tracks and awards **Crimson Points (CP)** for player actions in co
 | `crimson-tithe-service-entry.js` | Sole boot file. No top-level imports. Registers hooks, scene control, socket bridge, and `game['ld-crimson-tithe'].Tithe` API. |
 | `crimson-tithe-config.js` | Event definitions - every hook that can award CP is declared here with `condition` callbacks. |
 | `crimson-tithe-scripts/crimson-tithe-scripts-eventTracker.js` | Registers all config-driven hooks at `setup` (GM only). |
-| `crimson-tithe-scripts/crimson-tithe-scripts-pointsManager.js` | `getCrimsonPoints` / `setCrimsonPoints` / `awardCrimsonPoints`. Reads `ld-crimson-tithe` scope first and falls back to `rnk-crimson-blood` for legacy migration. |
+| `crimson-tithe-scripts/crimson-tithe-scripts-pointsManager.js` | `getCrimsonPoints` / `setCrimsonPoints` / `awardCrimsonPoints`. Reads `ld-crimson-tithe` first and falls back to leftover actor flag data without calling `getFlag` on a retired id. |
 | `crimson-tithe-scripts/crimson-tithe-scripts-audioPlayer.js` | Plays a random award phrase audio clip (`cp_N_phrase_M.mp3`) at `ready`. |
 | `crimson-tithe-scripts/crimson-tithe-scripts-chatNotifier.js` | Posts a styled chat card when CP is awarded. |
 | `crimson-tithe-scripts/crimson-tithe-utils.js` | `safeGetFlag` utility - null-safe flag reads with default value. |
@@ -68,7 +68,6 @@ Registered event: `showAwardPopup(actorId, points, description)` - fired by the 
 |---|---|---|
 | `ld-crimson-tithe` | `liveCP` | Current Crimson Points balance |
 | `ld-crimson-tithe` | `transformationPoints` | Accumulated Transformation Points |
-| `rnk-crimson-blood` *(legacy read-only)* | `liveCP` | Migrated automatically on first read |
 
 ---
 

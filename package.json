@@ -1,6 +1,6 @@
 {
   "name": "ld-crimson-tithe",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A crimson progression system for Foundry VTT with audio, UI, and events.",
   "type": "module",
   "scripts": {
