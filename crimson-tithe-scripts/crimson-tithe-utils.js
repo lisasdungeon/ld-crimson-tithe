@@ -9,23 +9,33 @@
  * @param {*} defaultValue
  * @returns {*}
  */
+function isActiveFlagScope(scope) {
+  if (!scope) return false;
+  if (scope === globalThis.game?.system?.id) return true;
+  return Boolean(globalThis.game?.modules?.get?.(scope)?.active);
+}
+
+function readFlagBag(actor, scope, key) {
+  const bag = actor.flags?.[scope];
+  if (bag == null) return undefined;
+  if (globalThis.foundry?.utils?.getProperty) return foundry.utils.getProperty(bag, key);
+  return key.split(".").reduce((acc, part) => (acc == null ? acc : acc[part]), bag);
+}
+
 export function safeGetFlag(actor, scope, key, defaultValue) {
-  if (!actor) {
-    console.warn(`safeGetFlag: Invalid actor provided for key ${key}`);
-    return defaultValue;
+  if (!actor) return defaultValue;
+
+  if (isActiveFlagScope(scope) && typeof actor.getFlag === "function") {
+    try {
+      const flagValue = actor.getFlag(scope, key);
+      return flagValue !== undefined && flagValue !== null ? flagValue : defaultValue;
+    } catch (_err) {
+      /* inactive or invalid scope; fall through to raw flags */
+    }
   }
 
-  try {
-    if (typeof actor.getFlag !== "function") {
-      console.warn(`safeGetFlag: actor does not implement getFlag; returning default for key ${key}`);
-      return defaultValue;
-    }
-    const flagValue = actor.getFlag(scope, key);
-    return flagValue !== undefined && flagValue !== null ? flagValue : defaultValue;
-  } catch (error) {
-    console.error(`safeGetFlag: Error getting flag '${key}' on actor:`, error);
-    return defaultValue;
-  }
+  const raw = readFlagBag(actor, scope, key);
+  return raw !== undefined && raw !== null ? raw : defaultValue;
 }
 
 /** True when this client is the active GM (sole authority for multi-GM worlds). */

@@ -2,10 +2,9 @@
 
 ## [Unreleased]
 
-- Rebrand to Lisa's Dungeon (`ld-*` module ids).
-- Copy actor flags from the retired `rnk-*` id on first ready.
-- Add LICENSE, package.json, syntax and validate checks.
-- Keep existing worlds working via `ld-legacy-migrate.js`.
+## [1.0.4] - 2026-08-20
+
+- Read leftover `rnk-crimson-blood` flags from `actor.flags` instead of calling Foundry `getFlag` on an inactive module.
 
 
 ## [1.0.3] - 2026-07-20
